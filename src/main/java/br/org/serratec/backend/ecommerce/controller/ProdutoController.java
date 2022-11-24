@@ -88,7 +88,7 @@ public class ProdutoController {
 	}
 
 	@ApiOperation("Retorna uma lista de produtos")
-	@GetMapping(produces = {MediaType.APPLICATION_JSON_VALUE} )
+	@GetMapping(path="listaProdutos", produces = {MediaType.APPLICATION_JSON_VALUE} )
 	public ResponseEntity<List<ProdutoDTO>> listar() {
 		List<ProdutoDTO> lista = produtoService.listar();
 		lista = lista.stream().map(this::addFotoLink).collect(toList());

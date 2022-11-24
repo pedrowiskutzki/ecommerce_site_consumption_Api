@@ -23,27 +23,42 @@ insert into funcionario (id, cpf, nome) values
 --    (5, 5, 'Rua das Ruas',  '99', '',        'Distrito 1',  'Cidade-Alerta',   '52742264', 'AL');
    
 insert into foto (id, nome, mimetype, data) values
-   (1, 'cadeira.jpg',            'image/jpeg', FILE_READ('classpath:fotos/cadeira.jpg')),
-   (2, 'escrivaninha.jpg',       'image/jpeg', FILE_READ('classpath:fotos/escrivaninha.jpg')),
-   (3, 'doinferno.jpg',          'image/jpeg', FILE_READ('classpath:fotos/doinferno.jpg')),
-   (4, 'useacabeca.jpg',         'image/jpeg', FILE_READ('classpath:fotos/useacabeca.jpg')),
-   (5, 'tablet.jpg',             'image/jpeg', FILE_READ('classpath:fotos/tablet.jpg')),
-   (6, 'mouse.jpg',              'image/jpeg', FILE_READ('classpath:fotos/mouse.jpg')),
-   (7, 'fitacrepe.jpg',          'image/jpeg', FILE_READ('classpath:fotos/fitacrepe.jpg')),
-   (8, 'mousepad.jpg',           'image/jpeg', FILE_READ('classpath:fotos/mousepad.jpg')),
-   (9, 'batalhaapocalipse.jpg',  'image/jpeg', FILE_READ('classpath:fotos/batalhaapocalipse.jpg'));
+   (1, 'GodOfWar.jpg',           'image/jpeg', FILE_READ('classpath:fotos/GodOfWar.jpg')),
+   (2, 'Ghost.jpg',              'image/jpeg', FILE_READ('classpath:fotos/Ghost.jpg')),
+   (3, 'CyberPunk.jpg',          'image/jpeg', FILE_READ('classpath:fotos/CyberPunk.jpg')),
+   (4, 'Fifa23.jpg',             'image/jpeg', FILE_READ('classpath:fotos/Fifa23.jpg')),
+   (5, 'farcry.jpg',             'image/jpeg', FILE_READ('classpath:fotos/farcry.jpg')),
+   (6, 'GranTurismo.jpg',        'image/jpeg', FILE_READ('classpath:fotos/GranTurismo.jpg')),
+   (7, 'SpiderMan.jpg',            'image/jpeg', FILE_READ('classpath:fotos/SpiderMan.jpg')),
+   (8, 'MortalKombat.jpg',       'image/jpeg', FILE_READ('classpath:fotos/MortalKombat.jpg')),
+   (9, 'TheLast.jpg',            'image/jpeg', FILE_READ('classpath:fotos/TheLast.jpg'));
    
    
 insert into produto (id, nome, descricao, qtd_estoque, valor, id_categoria, id_funcionario, data_fabricacao, id_foto) values
-   (1, 'Cadeira bx9',             'cadeira ergonomica confortavel',   3 ,  850.00, 2, 3, '2019-10-01', 1),
-   (2, 'Escrivaniha 1000',        'escrivainha para computador',      4 , 1850.00, 2, 3, '2019-08-11', 2),
-   (3, 'Do Inferno',              'Quadrinho do Alan More',           2 ,  150.00, 3, 2, '2017-12-21', 3),
-   (4, 'Use a Cabeca Java',       'Livro principal para Java',       10 ,  75.00,  3, 2, '2016-04-22', 4),
-   (5, 'Tablet Samsung',          'Tablet 10 polegadas',              2 , 3850.00, 1, 1, '2018-02-04', 5),
-   (6, 'Mouse Logitec',           'Mouse com 3 botoes e uma rodinha', 2 ,   50.00, 1, 3, '2019-07-13', 6),
-   (7, 'Fita Crepe',              'Fita crepe simples',              33 ,    1.30, 2, 1, '2012-12-15', 7),
-   (8, 'Mousepad',                'Mousepad estilizado com foto',    13 ,   25.00, 1, 1, '2020-01-04', 8),
-   (9, 'A Batalha do Apocalipse', 'Melhor livro que voce deve ler',  42 ,   55.00, 3, 2, '2009-01-21', 9);
+   (1, 'God Of War',             
+   'Kratos deve proteger seu filho Atreus e descobrir qual é o seu papel em uma trama que envolve os deuses e entidades da mitologia nórdica.',  
+    3 ,  200.00, 2, 3, '2022-11-24', 1),
+   (2, 'Ghost of Tsushima',        
+   'um samurai que precisa proteger a Ilha de Tsushima durante a primeira invasão mongol do Japão', 
+    4 , 180.00, 2, 3, '2022-11-24', 2),
+   (3, 'Cyber Punk',              
+   ' David Martinez — um adolescente que, após uma tragédia pessoal, decide assumir o controle de sua própria vida e atirar-se no submundo letal de Night City.',                
+    2 ,  200.00, 3, 2, '2022-11-24', 3),
+   (4, 'Fifa 23','Futebol',  10 ,  300.00,  3, 2, '2022-11-24', 4),
+   (5, 'Farcry 6',
+   'O jogador assume o papel de Dani Rojas, um membro da guerrilha tentando derrubar Castillo e seu regime.',                     2 , 180.00, 1, 1, '2022-11-24', 5),
+   (6, 'Gran Turismo 7',           
+   'O principal destaque da franquia e que tem se tornado mais forte a cada novo game da franquia, é a intenção de ser um simulador de corridas',                    
+   2 ,   150.00, 1, 3, '2022-11-24', 6),
+   (7, 'SpiderMan',              
+   'O protagonista é Peter Parker (Yuri Lowenthal), um assistente de pesquisa de 23 anos que ganhou poderes super-humanos',                     
+   33 ,    250.00, 2, 1, '2022-11-24', 7),
+   (8, 'Mortal Kombat 11',                
+   'Raiden bagunçou o tempo para impedir Shao Kahn e depois pegou o amuleto de Shinnok, corrompendo-se no processo e decidindo deixar a diplomacia de lado e usar a violência.',
+   13 ,   150.00, 1, 1, '2022-11-24', 8),
+   (9, 'The Last Of Us', 'The Last of Us Part I conta a história de Joel, um sobrevivente abatido que perdeu a filha no início de uma pandemia devastadora que dizimou a população',
+   42 ,   80.00, 3, 2, '2022-11-24', 9);
+   (10, 'T', 'xx', 2 ,   80.00, 3, 2, '2022-11-24', 10);
    
 insert into pedido (id, id_cliente, data_pedido, status) values 
   ( 1, 1, '2020-08-30 20:10:10', 4),
